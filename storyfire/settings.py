@@ -101,3 +101,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Sentry
+# Set your DSN value
+RAVEN_CONFIG = {
+    'dsn': 'http://c1f4da1ac731488cb3f95935bc24b9b6:782e9faf877e49af9cda83cd39c3726c@localhost:9000/1',
+}
+
+# Add raven to the list of installed apps
+INSTALLED_APPS = INSTALLED_APPS + (
+    # ...
+    'raven.contrib.django.raven_compat',
+)
