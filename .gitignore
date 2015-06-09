@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+storyfire/dump.rdb
+storyfire/sentry.db
 __pycache__/
 *.py[cod]
 *$py.class
